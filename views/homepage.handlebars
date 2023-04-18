@@ -1,0 +1,8 @@
+{{#each posts as |post|}} <!-- Start of Handlebars "each" block that iterates over the "posts" array -->
+  <a href="/post/{{id}}"> <!-- Generates a link to a post page with the post's ID in the URL -->
+    {{> post-info }} <!-- Renders a partial template called "post-info" that displays basic information about the post -->
+  </a>
+{{/each}} <!-- End of Handlebars "each" block -->
+
+
+{{!-- Contains a {{#each}} block helper that loops through an array of posts and renders each one using a partial called post-info. The post-info partial is defined in another file and contains HTML markup for displaying a single post. When the server sends the data to the client, Handlebars replaces the placeholders in the template with the actual data, resulting in a fully rendered HTML page that can be displayed in the browser. --}}
