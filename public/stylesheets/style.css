@@ -1,0 +1,249 @@
+/* Define CSS variables */
+:root {
+    --primary: #d7ccda;
+    --secondary: #ab9cae;
+    --tertiary: #807885;
+    --light-dark: #6d666f;
+    --dark: #362e38;
+    --border-radius: 0.2rem;
+  }
+  
+  /* Set default styles for all elements */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Set styles for the body element */
+  body {
+    background-color: var(--primary);
+    margin: 0;
+    padding: 0;
+    font-family: "Times New Roman", Times, serif;
+    color: var(--dark);
+    line-height: 1.5;
+    font-size: 16px;
+  }
+  
+  /* Set styles for links */
+  a,
+  a:hover,
+  a:focus,
+  a:visited {
+    color: var(--dark);
+    text-decoration: none;
+  }
+  
+  /* Set styles for a hero section */
+  .hero {
+    padding: 3% 4%;
+    background-color: var(--dark);
+    color: var(--primary);
+  }
+  
+  /* Set styles for paragraphs */
+  p {
+    font-size: 1.2rem;
+  }
+  
+  /* Set styles for heading 1 */
+  h1 {
+    font-weight: bold;
+    margin: 0;
+    color: var(--dark);
+    line-height: 1.25;
+  }
+  
+  /* Set styles for navigation bar */
+  header nav ul {
+    padding: 0;
+    margin: 10px 0 20px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+    list-style: none;
+  }
+  
+  /* Set styles for navigation bar links */
+  .nav a {
+    color: var(--dark);
+    text-decoration: none;
+    padding-right: 60px;
+  }
+  
+  /* Set styles for the main content */
+  main {
+    margin: 20px auto;
+    width: 90%;
+  }
+  
+  /* Set styles for buttons */
+  .btn {
+    font-size: 16px;
+    text-decoration: none;
+    padding: 10px 5px;
+    width: 100%;
+    display: block;
+    margin: 15px 0;
+    border-radius: var(--border-radius);
+    color: var(--dark);
+    border: none;
+    outline: none;
+    background-color: var(--light-dark);
+    box-shadow: 3px 3px var(--dark);
+    transform: translate(-1px, -1px);
+  }
+  
+  /* Set styles for button hover */
+  .btn:hover {
+    color: var(--primary);
+    background-color: var(--tertiary);
+    transform: translate(0, 0);
+    box-shadow: 3px 3px var(--dark);
+  }
+  
+  /* Set styles for buttons with no background or border */
+  .btn-no-style,
+  .btn-no-style:active {
+      background: none;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+      text-decoration: none;
+      color: var(--dark);
+      font-family:'Times New Roman', Times, serif;
+      font-size: 16px;
+  }
+  
+  /* Set styles for buttons with no background or border when focused */
+  .btn-no-style:focus {
+      outline: none;
+  }
+  
+  /* Set styles for a specific button */
+  #add-post-btn {
+    background-color: var(--dark);
+    color: var(--primary);
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    padding: 15px;
+    border-radius: var(--border-radius);
+  }
+  
+  .pg-title {
+    font-size: 3rem;
+    background-color: var(--primary);
+    color: var(--dark);
+    padding: 0 10px;
+    display: inline-block;
+    border-radius: var(--border-radius);
+    box-shadow: 6px 5px var(--light-dark);
+    margin-left: 50px;
+  }
+  
+  /* Cards */
+  .card {
+    margin: 0 0 20px 0;
+    border: 3px solid var(--dark);
+    border-radius: var(--border-radius);
+  }
+  
+  .card-header {
+    color: var(--primary);
+    background-color: var(--dark);
+    padding: 10px 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .card-body {
+    padding: 15px;
+  }
+  
+  .title {
+    font-weight: bold;
+  }
+  
+  .meta {
+    font-size: 14px;
+  }
+  
+  .content {
+    margin-bottom: 20px;
+  }
+  
+  /* Comments */
+  .comment-form-body {
+    padding: 20px;
+  }
+  
+  .comment {
+    margin: 20px 15px;
+  }
+  
+  .comment p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  /* Form */
+  .form-label,
+  .form-input {
+    display: block;
+  }
+  
+  .form-label {
+    font-size: 16px;
+    margin: 0 0 0 5px;
+  }
+  
+  .form-input,
+  .form-textarea {
+    width: 100%;
+    padding: 7px;
+    margin: 5px 0 15px 0;
+    font-size: 16px;
+    font-family: "Times New Roman", Times, serif;
+    border: 2px solid var(--light-dark);
+    border-radius: var(--border-radius);
+  }
+  
+  .form-textarea {
+    margin: 0;
+  }
+  
+  .center {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  .post-list {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .post-list-item {
+    margin: 15px;
+    padding: 10px 15px;
+    background-color: var(--light-dark);
+    list-style: none;
+    font-size: 16px;
+    border-radius: var(--border-radius);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .post-list a {
+    color: var(--dark);
+  }
+  

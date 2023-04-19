@@ -1,0 +1,29 @@
+<article>
+    <a href="/dashboard">&larr; Back to dashboard</a> <!-- Link to the dashboard page -->
+    <div class="card">
+        <div class="card-header">
+            Edit Post
+        </div>
+        <div class="card-body">
+            <form class="edit-post-form">
+                <div>
+                    <input class="form-input" type="text" name="post-title" value="{{post.title}}" /> <!-- Input field for the post title -->
+                    <textarea class="form-textarea" name="post-content">{{post.post_body}}</textarea> <!-- Input field for the post content -->
+                </div>
+                <div>
+                    <a href="/post/{{post.id}}">{{post.comments.length}} {{format_plural "comment" post.comments.length}}</a> <!-- Link to the post with the number of comments and a pluralization helper for the word "comment" -->
+                </div>
+                <button class="btn" type="submit">Update Post</button> <!-- Submit button to update the post -->
+                <button class="btn delete-post-btn" type="button">Delete Post</button> <!-- Button to delete the post -->
+            </form>
+        </div>
+    </div>
+</article>
+
+{{> comment-form}} <!-- Partial template for the comment form -->
+
+{{> comments post.comments }} <!-- Partial template for the comments section -->
+
+<script src="/javascript/edit-post.js"></script> <!-- Script for editing the post -->
+<script src="/javascript/delete-post.js"></script> <!-- Script for deleting the post -->
+<script src="/javascript/comment.js"></script> <!-- Script for adding comments to the post -->
