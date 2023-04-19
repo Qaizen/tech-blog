@@ -1,7 +1,7 @@
 // Import the required packages and route files
 const router = require('express').Router(); //creates new router object
 const apiRoutes = require('./api'); //import routes form api
-const homeRoutes = require('./home-routes.js'); /
+const homeRoutes = require('./home-routes.js'); 
 const dashboardRoutes = require('./dashboard-routes.js');
 
 // Define the routes
