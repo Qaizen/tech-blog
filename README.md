@@ -35,3 +35,6 @@ You can download "https://insomnia.rest/download" manipulate/test the data with 
 ### [Homepage](heroku link here)
 
 ### [Github] (https://github.com/Qaizen/tech-blog)
+
+![Screenshots](./public/images/s1.jpeg)
+![Screenshots](./public/images/s2.jpeg)
