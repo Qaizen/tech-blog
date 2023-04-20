@@ -15,7 +15,7 @@ async function newFormHandler(event) {
 
   // Get the values of the post title and post body input fields
   const title = document.querySelector('input[name="post-title"]').value;
-  const post_body = document.querySelector('input[name="post-body"]').value;
+  const post_body = document.querySelector('textarea[name="post-content"]').value;
 
   // Send a POST request to the API to create a new post
   const response = await fetch(`/api/posts`, {
