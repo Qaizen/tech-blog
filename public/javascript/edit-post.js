@@ -5,7 +5,8 @@ async function editFormHandler(event) {
   
     // Get the values of the title and post_body fields from the form
     const title = document.querySelector('input[name="post-title"]').value;
-    const post_body = document.querySelector('input[name="post-body"]').value;
+    const post_body = document.querySelector('textarea[name="post-content"]').value;
+
   
     // Get the ID of the post from the URL
     const id = window.location.toString().split('/')[
