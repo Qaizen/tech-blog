@@ -1,10 +1,10 @@
 /* Define CSS variables */
 :root {
-    --primary: #d7ccda;
-    --secondary: #ab9cae;
-    --tertiary: #807885;
-    --light-dark: #6d666f;
-    --dark: #362e38;
+    --primary: #d6dadc;
+    --secondary: #b6bdc2;
+    --tertiary: #a8b5bb;
+    --light-dark: #b3becc;
+    --dark: #828796;
     --border-radius: 0.2rem;
   }
   
